@@ -7,17 +7,24 @@ class ChuckNQuote extends Component {
 		posts: []
 	}
 	componentDidMount(){
-		axios.get(`https://logobox.agency/wp-json/wp/v2/posts?_embed`)
+		axios.get(`https://api.chucknorris.io/jokes/random`)
 			.then(res => {
 				console.log(res.data)
-				this.setState({posts: res.data})
+				this.setState({chuck: res.data})
+				console.log(this.state.chuck.value)
 			})
+
 	}
   render() {
     return ( 
     	<div className="container">
 	    	<div className="row">
-	    	
+	    		<div className="display-4">
+
+	    			{this.state.value}
+
+	    			
+	    		</div>
 	    			
 
 			  </div>

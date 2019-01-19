@@ -19,8 +19,9 @@ class App extends Component {
        <p>sdfsdf</p>
        <Person></Person>
        <PersonInput></PersonInput>
-       <LogoPosts></LogoPosts>
        <ChuckNQuote></ChuckNQuote>
+       <LogoPosts></LogoPosts>
+       
       </div>
     );
   }
