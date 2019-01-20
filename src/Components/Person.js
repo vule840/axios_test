@@ -9,7 +9,7 @@ class Person extends Component {
 	componentDidMount(){
 		axios.get(`https://jsonplaceholder.typicode.com/users`)
 			.then(res => {
-				console.log(res.data)
+				//console.log(res.data)
 				this.setState({persons: res.data})
 			})
 	}
